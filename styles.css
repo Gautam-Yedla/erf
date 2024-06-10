@@ -1,0 +1,157 @@
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+ 
+ 
+  background-color: #0066ff;
+}
+
+.container {
+  width:500px;
+  height: 680px;
+  background-color: #fff;
+  margin:auto;
+  margin-top: 30px;
+  border-radius: 10px;
+}
+
+.container .header{
+  background-color: #000;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.container .header h2{
+  text-align: center;
+  padding:5px;
+  font-size: 20px;
+  color:#fff;
+  font-family: sans-serif;
+}
+/* Form Styles */
+
+#registrationForm {
+  display: flexbox;
+  width:400px;
+  height:auto;
+  margin:auto;
+  padding:5px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #0088ff;
+}
+
+input[type="text"], input[type="email"], select, textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, select:focus, textarea:focus {
+  border-color: #337ab7;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #337ab7;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #23527c;
+}
+
+/* Error Message Styles */
+
+.error-message {
+  color: #red;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* Success Message Styles */
+
+.success-message {
+  color: #green;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* Media Queries */
+
+/* Large Devices (Desktops) */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1000px;
+  }
+}
+
+/* Medium Devices (Tablets) */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .container {
+    max-width: 700px;
+  }
+  .form-group {
+    margin-bottom: 15px;
+  }
+}
+
+/* Small Devices (Smartphones) */
+@media (max-width: 767px) {
+  .container {
+    max-width: 500px;
+  }
+  .form-group {
+    margin-bottom: 10px;
+  }
+  label {
+    font-size: 14px;
+  }
+  input[type="text"], input[type="email"], select, textarea {
+    font-size: 14px;
+  }
+  button[type="submit"] {
+    font-size: 14px;
+  }
+}
+
+/* Extra Small Devices (Small Smartphones) */
+@media (max-width: 479px) {
+  .container {
+    max-width: 300px;
+  }
+  .form-group {
+    margin-bottom: 5px;
+  }
+  label {
+    font-size: 12px;
+  }
+  input[type="text"], input[type="email"], select, textarea {
+    font-size: 12px;
+  }
+  button[type="submit"] {
+    font-size: 12px;
+  }
+}
